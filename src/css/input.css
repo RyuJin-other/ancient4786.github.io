@@ -16,6 +16,8 @@ body {
   @apply w-[28px] h-[2px] my-2 block bg-slate-500;
 }
 
+
+
 .hamburger-active > span:nth-child(1) {
   @apply -rotate-45;
 }
