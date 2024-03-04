@@ -66,20 +66,6 @@ class TextScramble {
   }
 }
 
-// ——————————————————————————————————————————————————
-// Example
-// ——————————————————————————————————————————————————
-
-// const phrases = [
-//   "Neo,",
-//   "sooner or later",
-//   "you're going to realize",
-//   "just as I did",
-//   "that there's a difference",
-//   "between knowing the path",
-//   "and walking the path",
-// ];
-
 const el = document.querySelector(".text");
 const fx = new TextScramble(el);
 
@@ -97,13 +83,17 @@ next();
 
 // Navbar-fixed
 window.onscroll = function () {
+  const mainImg = "/dist/img/logo.png";
+  const scrollImg = "/dist/img/logo-gray.png";
   const header = document.querySelector("header");
   const fixedNav = header.offsetTop;
 
   if (window.scrollY > fixedNav) {
     header.classList.add("navbar-fixed");
+    document.getElementById("image").src = scrollImg;
   } else {
     header.classList.remove("navbar-fixed");
+    document.getElementById("image").src = mainImg;
   }
 };
 
