@@ -83,8 +83,8 @@ next();
 
 // Navbar-fixed
 window.onscroll = function () {
-  const mainImg = "/dist/img/Logo.png";
-  const scrollImg = "/dist/img/logo-gray.png";
+  const mainImg = "/dist/img/Logo.webp";
+  const scrollImg = "/dist/img/logo-gray.webp";
   const header = document.querySelector("header");
   const fixedNav = header.offsetTop;
 
